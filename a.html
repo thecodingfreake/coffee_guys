@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Guys</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7e6c4;
+            margin: 0;
+        }
+
+        .coffee-text {
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            color: #6f4e37;
+            position: relative;
+            cursor: pointer;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .coffee-text:hover {
+            text-shadow: 0 0 10px #d2691e;
+        }
+    </style>
+</head>
+<body>
+    <div class="coffee-text">☕ Coffee Guys ☕</div>
+</body>
+</html>
